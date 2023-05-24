@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardMoveObject: {fileID: 1590130271}
   card: {fileID: 1590130272}
-  SpriteRenderer: {fileID: 1590130274}
+  Scripttext: {fileID: 1262028767}
   pos: {x: 0, y: 0, z: 0}
   fMoving: 3
 --- !u!4 &274709411

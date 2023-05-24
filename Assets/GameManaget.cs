@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class GameManaget : MonoBehaviour
 {
 
     public GameObject cardMoveObject;
     public Card card;
-    public SpriteRenderer SpriteRenderer;
+    public TMP_Text Scripttext;
     public Vector3 pos; 
     public float fMoving;
 
@@ -15,6 +16,7 @@ public class GameManaget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -29,13 +31,13 @@ public class GameManaget : MonoBehaviour
         }
 
         if(cardMoveObject.transform.position.x>0.5){
-            SpriteRenderer.color=Color.green;
+           Scripttext.text="예";
         }
         else if(cardMoveObject.transform.position.x<-0.5){
-                    SpriteRenderer.color=Color.white;
+            Scripttext.text="아니오";
         }
         else{
-                        SpriteRenderer.color=Color.red;
+            Scripttext.text="몰?루";
         }
     }
 }
