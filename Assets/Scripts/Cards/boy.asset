@@ -19,5 +19,5 @@ MonoBehaviour:
   rightquote: "\uB3D9\uC544\uB9AC \u3131"
   askquote: "\uB3D9\uC544\uB9AC\uD558\uC274?"
   stat: 20
-  up: 1
+  up: 0
   down: 3
