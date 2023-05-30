@@ -51,7 +51,11 @@ public class GameManaget : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        HC.setStat(health);
+        MC.setStat(money);
+        PC.setStat(people);
+        IC.setStat(intel);
         characName.text=name;
         if(Input.GetMouseButton(0)&&cardcon.isMouseOver){
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
