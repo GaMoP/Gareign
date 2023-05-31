@@ -201,7 +201,7 @@ MonoBehaviour:
   intel: 50
   rotateE: -5
   currentCard: {fileID: 11400000, guid: 172d83ba0b620af49985dfcaa94508aa, type: 2}
-  testCard: {fileID: 11400000, guid: 172d83ba0b620af49985dfcaa94508aa, type: 2}
+  testCard: {fileID: 11400000, guid: 590d3bce55793864ea7fcd5164d359f2, type: 2}
   HC: {fileID: 947061573}
   MC: {fileID: 1856711979}
   PC: {fileID: 2070920850}
@@ -215,6 +215,7 @@ MonoBehaviour:
   intelZero: {fileID: 11400000, guid: 2d318f7b5f906684183651029f2840b8, type: 2}
   intelMax: {fileID: 11400000, guid: ff474111831e57a4381cbd2f153a075a, type: 2}
   gameOver: {fileID: 11400000, guid: 31cfa4adf3eb5cf42a0b36ed9c5b46c9, type: 2}
+  tutorial: {fileID: 11400000, guid: c5db8ef09afd1584ba2f71253004fbeb, type: 2}
 --- !u!4 &274709411
 Transform:
   m_ObjectHideFlags: 0

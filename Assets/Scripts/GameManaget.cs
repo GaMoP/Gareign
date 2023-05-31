@@ -48,6 +48,7 @@ public class GameManaget : MonoBehaviour
     public Card intelZero;
     public Card intelMax;
     public Card gameOver;
+    public Card tutorial;
 
 
     // Start is called before the first frame update
@@ -57,6 +58,7 @@ public class GameManaget : MonoBehaviour
         MC.setStat(money);
         PC.setStat(people);
         IC.setStat(intel);
+        gameStatus=3;
         Load(testCard);
     }
 
@@ -103,6 +105,14 @@ public class GameManaget : MonoBehaviour
                         else if(gameStatus==2){
                            Application.Quit();
                         }
+                        else if(gameStatus==3){
+                            gameStatus=4;
+                            Load(tutorial);
+                        }
+                        else if(gameStatus==4){
+                            gameStatus=0;
+                            NewCard();
+                        }
                         else{
                             NewCard();
                             count=count+1;
@@ -122,6 +132,14 @@ public class GameManaget : MonoBehaviour
                             else if(gameStatus==2){
                                  gameStatus=0;
                                  NewCard();
+                            } 
+                            else if(gameStatus==3){
+                            gameStatus=4;
+                            Load(tutorial);
+                            }
+                            else if(gameStatus==4){
+                            gameStatus=0;
+                            NewCard();
                             }
                            else{
                                 NewCard();
