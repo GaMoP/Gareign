@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ce31bf212ddc241ad96f982bcb040c, type: 3}
+  m_Name: healthZero
+  m_EditorClassIdentifier: 
+  id: -1
+  cardName: healthZero
+  sprite: 0
+  leftQuote: "\uC608..."
+  rightquote: "\uC608..."
+  askquote: "\uB2F9\uC2E0\uC740 \uAC74\uAC15\uC774 \uAE09\uC18D\uB3C4\uB85C \uC1E0\uC57D\uD574\uC838
+    \uACFC\uB85C\uC0AC\uD588\uC2B5\uB2C8\uB2E4..."
+  stat: 0
+  up: -1
+  down: -1

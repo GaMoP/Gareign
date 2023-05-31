@@ -26,6 +26,6 @@ public class CardControll : MonoBehaviour
 
 public enum CardSprite{
      boy,
-     girl
-     ,schoolPresident
+     girl,
+     schoolPresident
 }

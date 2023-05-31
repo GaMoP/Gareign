@@ -11,6 +11,7 @@ public class GameManaget : MonoBehaviour
     public SpriteRenderer cardSpriteRenderer;
     public TMP_Text Scripttext;
     public TMP_Text characName;
+    public TMP_Text dayCount;
     public Vector3 pos; 
     public float fSideMargin;
     public float fSideTrigger;
@@ -28,7 +29,8 @@ public class GameManaget : MonoBehaviour
     public int money;
     public int people;
     public int intel;
-    
+    private int gameStatus=0;
+    private int count=0;
 
     public float rotateE;
     public Card currentCard;
@@ -37,6 +39,15 @@ public class GameManaget : MonoBehaviour
     public Count MC;
     public Count PC;
     public Count IC;
+    public Card healthZero;
+    public Card healthMax;
+    public Card moneyZero;
+    public Card moneyMax;
+    public Card peopleZero;
+    public Card peopleMax;
+    public Card intelZero;
+    public Card intelMax;
+    public Card gameOver;
 
 
     // Start is called before the first frame update
@@ -83,14 +94,39 @@ public class GameManaget : MonoBehaviour
                         showChange(0);
                        if(Input.GetMouseButtonUp(0)){
                         setStat(0);
-                        NewCard();
+                        if(gameStatus==1){
+                            count=0;
+                            clearStat();
+                            gameStatus=2;
+                            Load(gameOver);
+                        }
+                        else if(gameStatus==2){
+                           Application.Quit();
+                        }
+                        else{
+                            NewCard();
+                            count=count+1;
+                        }
                        }
         }
         else if(cardMoveObject.transform.position.x<fSideMargin){
               Scripttext.alpha = Mathf.Min(-cardMoveObject.transform.position.x,1); 
                      if(Input.GetMouseButtonUp(0)){
                         setStat(1);
-                        NewCard();
+                          if(gameStatus==1){
+                            count = 0;
+                            clearStat();
+                            gameStatus=2;
+                            Load(gameOver);
+                            }
+                            else if(gameStatus==2){
+                                 gameStatus=0;
+                                 NewCard();
+                            }
+                           else{
+                                NewCard();
+                                count=count+1;
+                            }
                    }
             showChange(1);
             characName.text=" ";
@@ -102,7 +138,8 @@ public class GameManaget : MonoBehaviour
             Scripttext.text=ask;
         }
        cardMoveObject.transform.eulerAngles = new Vector3(0,0,cardMoveObject.transform.position.x*rotateE); 
-
+        checkOver();
+        dayCount.text=" "+count+" ";
     }
 
     public void Load(Card card){
@@ -119,6 +156,12 @@ public class GameManaget : MonoBehaviour
         int rollDice = Random.Range(0,PicManager.cards.Length);
         Load(PicManager.cards[rollDice]);
     } 
+    public void clearStat(){
+        health=50;
+        money=50;
+        intel=50;
+        people=50;
+    }
     public void setStat(int i){
         if(i==0){
              switch (upThing){
@@ -291,5 +334,42 @@ public class GameManaget : MonoBehaviour
 
         IC.up.fillAmount=0;
         IC.down.fillAmount=0;
+    }
+    public void checkOver(){
+        if(health<=0){
+            gameStatus=1;
+            Load(healthZero);
+        }
+        if(health>=100){
+            gameStatus=1;
+            Load(healthMax);
+        }
+        if(people<=0){
+            gameStatus=1;
+            Load(peopleZero);
+        }
+        if(people>=100){
+            gameStatus=1;
+            Load(peopleMax);
+        }
+         if(money<=0){
+            gameStatus=1;
+            Load(moneyZero);
+        }
+        if(money>=100){
+            gameStatus=1;
+            Load(moneyMax);
+        }
+        if(intel<=0){
+            gameStatus=1;
+            Load(intelZero);
+        }
+        if(intel>=100){
+            gameStatus=1;
+            Load(intelMax);
+        }
+    }
+    public void restart(){
+
     }
 }
