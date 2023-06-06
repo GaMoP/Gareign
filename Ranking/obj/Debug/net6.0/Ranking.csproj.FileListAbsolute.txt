@@ -1,0 +1,13 @@
+C:\Users\82104\Documents\GitHub\Gareign\Ranking\obj\Debug\net6.0\Ranking.csproj.AssemblyReference.cache
+C:\Users\82104\Documents\GitHub\Gareign\Ranking\obj\Debug\net6.0\Ranking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\82104\Documents\GitHub\Gareign\Ranking\obj\Debug\net6.0\Ranking.AssemblyInfoInputs.cache
+C:\Users\82104\Documents\GitHub\Gareign\Ranking\obj\Debug\net6.0\Ranking.AssemblyInfo.cs
+C:\Users\82104\Documents\GitHub\Gareign\Ranking\obj\Debug\net6.0\Ranking.csproj.CoreCompileInputs.cache
+C:\Users\82104\Documents\GitHub\Gareign\Ranking\obj\Debug\net6.0\Ranking.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\82104\Documents\GitHub\Gareign\Gareign\Ranking\obj\Debug\net6.0\Ranking.csproj.AssemblyReference.cache
+C:\Users\82104\Documents\GitHub\Gareign\Gareign\Ranking\obj\Debug\net6.0\Ranking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\82104\Documents\GitHub\Gareign\Gareign\Ranking\obj\Debug\net6.0\Ranking.AssemblyInfoInputs.cache
+C:\Users\82104\Documents\GitHub\Gareign\Gareign\Ranking\obj\Debug\net6.0\Ranking.AssemblyInfo.cs
+C:\Users\82104\Documents\GitHub\Gareign\Gareign\Ranking\obj\Debug\net6.0\Ranking.csproj.CoreCompileInputs.cache
+C:\Users\82104\Documents\GitHub\Gareign\Gareign\Ranking\obj\Debug\net6.0\Ranking.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\82104\Documents\GitHub\Gareign\Gareign\Ranking\obj\Debug\net6.0\Ranking.MvcApplicationPartsAssemblyInfo.cache

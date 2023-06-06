@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class GameManaget : MonoBehaviour
 {
 
@@ -104,7 +105,7 @@ public class GameManaget : MonoBehaviour
                                 Load(gameOver);
                             }
                             else if(gameStatus==2){
-                            Application.Quit();
+
                             }
                             else if(gameStatus==3){
                                 gameStatus=4;
