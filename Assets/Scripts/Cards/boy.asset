@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: boy
   m_EditorClassIdentifier: 
   id: 0
-  cardName: boycard
+  cardName: "\uB0A8\uD559\uC0DD"
   sprite: 0
   leftQuote: "\uC8C4\uC1A1\uD558\uC9C0\uB9CC \uB108\uBB34 \uBC14\uBE60\uC11C"
   rightquote: "\uC88B\uC544\uC694 \uB3D9\uC544\uB9AC \uB4E4\uC5B4\uAC08\uAC8C\uC694"
