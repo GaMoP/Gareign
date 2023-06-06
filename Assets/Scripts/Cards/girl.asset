@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: girl
   m_EditorClassIdentifier: 
   id: 0
-  cardName: GirlCard
+  cardName: "\uC5EC\uD559\uC0DD"
   sprite: 1
-  leftQuote: "\uC378 \u3134"
-  rightquote: "\uC378 \u3131"
-  askquote: "\uC378\uD558\uC274?"
+  leftQuote: "\uBC84\uC2A4\uD0C8\uAC74\uB370\uC694?"
+  rightquote: "\uB135"
+  askquote: "\uC774\uBC88 \uD300\uD504\uB85C\uC81D\uD2B8 \uAC19\uC774 \uC798\uD574\uBD10\uC694"
   stat: 15
-  up: 2
-  down: 3
+  up: 3
+  down: 0

@@ -15,9 +15,10 @@ MonoBehaviour:
   id: 0
   cardName: Tutorial
   sprite: 2
-  leftQuote: "\uC608"
-  rightquote: "\uC608..."
-  askquote: "\uAC00\uCC9C\uB300\uC5D0 \uC628 \uAC78 \uD658\uC601\uD55C\uB2E4."
+  leftQuote: "\uC640!"
+  rightquote: "\uC640!"
+  askquote: "\uC790\uB791\uC2A4\uB7EC\uC6B4 \uAC00\uCC9C\uC778\uC774 \uB418\uC2E0
+    \uAC83\uC744 \uD658\uC601\uD574\uC694~. \uC800\uB294 \uCD1D\uC7A5\uC785\uB2C8\uB2E4"
   stat: 0
-  up: 0
-  down: 0
+  up: -1
+  down: -1

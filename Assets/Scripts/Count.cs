@@ -13,7 +13,7 @@ public class Count : MonoBehaviour
     void Start()
     {
      
-      self.fillAmount = 50/100;
+      self.fillAmount = 0/100;
     }
 
     // Update is called once per frame

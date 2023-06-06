@@ -25,12 +25,16 @@ public class GameManaget : MonoBehaviour
     private int downThing;
     private int stat;
     
+    public GameObject StartImage;
+
+
     public int health;
     public int money;
     public int people;
     public int intel;
     private int gameStatus=0;
     private int count=0;
+    private int start = 0;
 
     public float rotateE;
     public Card currentCard;
@@ -54,71 +58,69 @@ public class GameManaget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HC.setStat(health);
-        MC.setStat(money);
-        PC.setStat(people);
-        IC.setStat(intel);
-        gameStatus=3;
-        Load(testCard);
+        
     }
 
     // Update is called once per frame
     void Update()
     {   
-        HC.setStat(health);
-        MC.setStat(money);
-        PC.setStat(people);
-        IC.setStat(intel);
-        characName.text=name;
-        if(Input.GetMouseButton(0)&&cardcon.isMouseOver){
-            Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            cardMoveObject.transform.position = pos;
-        }
-        else{
-            cardMoveObject.transform.position = Vector2.MoveTowards(cardcon.transform.position,new Vector2(0,0),fMoving);
-            Scripttext.text = ask;
-            Scripttext.alpha=255;
-        }
-        if(cardMoveObject.transform.position.x==0){
-            Scripttext.text=ask;
+        
+        if(start==1){
+            characName.text=name;
+
+            HC.setStat(health);
+            MC.setStat(money);
+            PC.setStat(people);
+            IC.setStat(intel);
             if(Input.GetMouseButton(0)&&cardcon.isMouseOver){
-                characName.text=" ";
+                Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                cardMoveObject.transform.position = pos;
             }
-            else{      
-                setChange();
-                Scripttext.text=ask;      
+            else{
+                cardMoveObject.transform.position = Vector2.MoveTowards(cardcon.transform.position,new Vector2(0,0),fMoving);
+                Scripttext.text = ask;
+                Scripttext.alpha=255;
             }
-        }
-        else if(cardMoveObject.transform.position.x>fSideMargin){
-           Scripttext.alpha = Mathf.Min(cardMoveObject.transform.position.x,1); 
-                       Scripttext.text=Right;
-                        characName.text=" ";
-                        showChange(0);
-                       if(Input.GetMouseButtonUp(0)){
-                        setStat(0);
-                        if(gameStatus==1){
-                            count=0;
-                            clearStat();
-                            gameStatus=2;
-                            Load(gameOver);
+            if(cardMoveObject.transform.position.x==0){
+                Scripttext.text=ask;
+                if(Input.GetMouseButton(0)&&cardcon.isMouseOver){
+                    characName.text=" ";
+                }
+                else{      
+                    setChange();
+                    Scripttext.text=ask;      
+                }
+            }
+            else if(cardMoveObject.transform.position.x>fSideMargin){
+            Scripttext.alpha = Mathf.Min(cardMoveObject.transform.position.x,1); 
+                        Scripttext.text=Right;
+                            characName.text=" ";
+                            showChange(0);
+                        if(Input.GetMouseButtonUp(0)){
+                            setStat(0);
+                            if(gameStatus==1){
+                                count=0;
+                                clearStat();
+                                gameStatus=2;
+                                Load(gameOver);
+                            }
+                            else if(gameStatus==2){
+                            Application.Quit();
+                            }
+                            else if(gameStatus==3){
+                                gameStatus=4;
+                                Load(tutorial);
+                            }
+                            else if(gameStatus==4){
+                                gameStatus=0;
+                                NewCard();
+                            }
+                            else{
+                                NewCard();
+                                count=count+1;
+                            }
                         }
-                        else if(gameStatus==2){
-                           Application.Quit();
-                        }
-                        else if(gameStatus==3){
-                            gameStatus=4;
-                            Load(tutorial);
-                        }
-                        else if(gameStatus==4){
-                            gameStatus=0;
-                            NewCard();
-                        }
-                        else{
-                            NewCard();
-                            count=count+1;
-                        }
-                       }
-        }
+            }
         else if(cardMoveObject.transform.position.x<fSideMargin){
               Scripttext.alpha = Mathf.Min(-cardMoveObject.transform.position.x,1); 
                      if(Input.GetMouseButtonUp(0)){
@@ -145,19 +147,20 @@ public class GameManaget : MonoBehaviour
                                 NewCard();
                                 count=count+1;
                             }
-                   }
-            showChange(1);
-            characName.text=" ";
-            Scripttext.text=Left;
-        }
-        else{
-            setChange();
-            Scripttext.alpha=255;
-            Scripttext.text=ask;
-        }
-       cardMoveObject.transform.eulerAngles = new Vector3(0,0,cardMoveObject.transform.position.x*rotateE); 
-        checkOver();
-        dayCount.text=" "+count+" ";
+                        }
+                showChange(1);
+                characName.text=" ";
+                Scripttext.text=Left;
+            }
+            else{
+                setChange();
+                Scripttext.alpha=255;
+                Scripttext.text=ask;
+            }
+        cardMoveObject.transform.eulerAngles = new Vector3(0,0,cardMoveObject.transform.position.x*rotateE); 
+            checkOver();
+            dayCount.text=" "+count+" ";
+            }
     }
 
     public void Load(Card card){
@@ -389,5 +392,15 @@ public class GameManaget : MonoBehaviour
     }
     public void restart(){
 
+    }
+    public void onClickStartButton(){
+        start =1;
+        StartImage.SetActive(false);
+        HC.setStat(health);
+        MC.setStat(money);
+        PC.setStat(people);
+        IC.setStat(intel);
+        gameStatus=3;
+        Load(testCard);
     }
 }
