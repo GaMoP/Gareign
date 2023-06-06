@@ -31,5 +31,13 @@ public enum CardSprite{
      prof,
      boss,
      trainer,
-     cat
+     cat,
+     healthMax,
+     healthZero,
+     peopleMax,
+     peopleZero,
+     intelMax,
+     intelZero,
+     moneyMax,
+     moneyZero
 }

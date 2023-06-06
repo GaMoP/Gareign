@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   cardName: moneyMax
-  sprite: 0
+  sprite: 13
   leftQuote: 
   rightquote: 
-  askquote: "\uB2F9\uC2E0\uC740 \uB3C8\uC774 \uB108\uBB34 \uB9CE\uC544\uC11C \uD3C9\uC0DD
-    \uC77C\uD558\uC9C0 \uC54A\uC544\uB3C4 \uB420\uC815\uB3C4\uC785\uB2C8\uB2E4."
+  askquote: "\uB2F9\uC2E0\uC740 \uB3C8\uC774 \uB108\uBB34 \uB9CE\uC740 \uB098\uBA38\uC9C0
+    \uB3C8\uC758 \uB9DB\uC5D0 \uC911\uB3C5\uB418\uC5B4 \uD559\uAD50\uAC00 \uB3C8\uB0AD\uBE44\uB77C\uACE0
+    \uC0DD\uAC01\uD574 \uC790\uD1F4\uD558\uC600\uC2B5\uB2C8\uB2E4\u2026"
   stat: -1
   up: -1
   down: -1

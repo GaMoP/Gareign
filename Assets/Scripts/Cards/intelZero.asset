@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   cardName: intelZero
-  sprite: 0
+  sprite: 12
   leftQuote: 
   rightquote: 
-  askquote: 
+  askquote: "\uB2F9\uC2E0\uC740 \uD559\uC810\uC5D0 \uC2E0\uACBD \uC4F0\uC9C0 \uC54A\uC740
+    \uB098\uBA38\uC9C0 \uC878\uC5C5\uD558\uACE0\uB3C4 \uCDE8\uC5C5\uC900\uBE44\uC0DD\uC774
+    \uB418\uC5C8\uC2B5\uB2C8\uB2E4\u2026"
   stat: -1
   up: -1
   down: -1

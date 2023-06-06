@@ -173,7 +173,7 @@ public class GameManaget : MonoBehaviour
         downThing =card.down;
     }
     public void NewCard(){
-        int rollDice = Random.Range(0,PicManager.cards.Length);
+        int rollDice = Random.Range(0,7);
         Load(PicManager.cards[rollDice]);
     } 
     public void clearStat(){
