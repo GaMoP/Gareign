@@ -1,8 +1,10 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+
 public class GameManaget : MonoBehaviour
 {
 
@@ -104,7 +106,7 @@ public class GameManaget : MonoBehaviour
                                 Load(gameOver);
                             }
                             else if(gameStatus==2){
-                            Application.Quit();
+                                SceneManager.LoadScene("Ranking");
                             }
                             else if(gameStatus==3){
                                 gameStatus=4;
@@ -388,9 +390,6 @@ public class GameManaget : MonoBehaviour
             gameStatus=1;
             Load(intelMax);
         }
-    }
-    public void restart(){
-
     }
     public void onClickStartButton(){
         start =1;
