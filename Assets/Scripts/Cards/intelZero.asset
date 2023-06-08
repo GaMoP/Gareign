@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ce31bf212ddc241ad96f982bcb040c, type: 3}
+  m_Name: intelZero
+  m_EditorClassIdentifier: 
+  id: 0
+  cardName: intelZero
+  sprite: 12
+  leftQuote: 
+  rightquote: 
+  askquote: "\uB2F9\uC2E0\uC740 \uD559\uC810\uC5D0 \uC2E0\uACBD \uC4F0\uC9C0 \uC54A\uC740
+    \uB098\uBA38\uC9C0 \uC878\uC5C5\uD558\uACE0\uB3C4 \uCDE8\uC5C5\uC900\uBE44\uC0DD\uC774
+    \uB418\uC5C8\uC2B5\uB2C8\uB2E4\u2026"
+  stat: -1
+  up: -1
+  down: -1

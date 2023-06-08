@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ce31bf212ddc241ad96f982bcb040c, type: 3}
+  m_Name: girl
+  m_EditorClassIdentifier: 
+  id: 0
+  cardName: "\uC5EC\uD559\uC0DD"
+  sprite: 1
+  leftQuote: "\uBC84\uC2A4\uD0C8\uAC74\uB370\uC694?"
+  rightquote: "\uB135"
+  askquote: "\uC774\uBC88 \uD300\uD504\uB85C\uC81D\uD2B8 \uAC19\uC774 \uC798\uD574\uBD10\uC694"
+  stat: 15
+  up: 3
+  down: 0

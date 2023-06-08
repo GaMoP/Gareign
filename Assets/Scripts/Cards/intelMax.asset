@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ce31bf212ddc241ad96f982bcb040c, type: 3}
+  m_Name: intelMax
+  m_EditorClassIdentifier: 
+  id: 0
+  cardName: intelMax
+  sprite: 11
+  leftQuote: 
+  rightquote: 
+  askquote: "\uB2F9\uC2E0\uC740 \uACF5\uBD80\uB97C \uB108\uBB34 \uC5F4\uC2EC\uD788
+    \uD55C \uB098\uBA38\uC9C0 \uAD50\uC218\uB2D8\uC758 \uB208\uC5D0 \uB744\uC5B4
+    \uB300\uD559\uC6D0\uC0DD\uC73C\uB85C \uBD99\uC7A1\uD614\uC2B5\uB2C8\uB2E4\u2026"
+  stat: -1
+  up: -1
+  down: -1
